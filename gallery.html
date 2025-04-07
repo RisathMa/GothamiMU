@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Gallery - Gothami School Media Unit</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <svg viewBox="0 0 100 100" class="logo-svg">
+                        <circle cx="50" cy="50" r="45" class="logo-circle" />
+                        <text x="50" y="55" text-anchor="middle" class="logo-text">සංජනනි</text>
+                    </svg>
+                </div>
+                <span class="school-name">Gothami School Media Unit</span>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#units">Units</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Event Gallery</h1>
+            <p>Browse through our collection of school events and activities</p>
+        </div>
+    </section>
+
+    <!-- Gallery Albums Section -->
+    <section class="gallery-albums">
+        <div class="container">
+            <!-- Annual Prize Giving Album -->
+            <div class="album-card" onclick="location.href='albem-teacherday.html'">
+                <div class="album-image prize-giving-bg">
+                    <div class="album-overlay">
+                        <h3>Teacher's Day 2024</h3>
+                        <p>10 Photos</p>
+                        <span class="view-album">View Album <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cultural Festival Album -->
+            <div class="album-card" onclick="location.href='albem-childrenday.html'">
+                <div class="album-image cultural-festival-bg">
+                    <div class="album-overlay">
+                        <h3>Children's Day 2024</h3>
+                        <p>8 Photos</p>
+                        <span class="view-album">View Album <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sports Meet Album -->
+            <div class="album-card" onclick="location.href='albem-sport-meet.html'">
+                <div class="album-image sports-meet-bg">
+                    <div class="album-overlay">
+                        <h3>Sports Meet</h3>
+                        <p>12 Photos</p>
+                        <span class="view-album">View Album <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Science Exhibition Album -->
+            <div class="album-card" onclick="location.href='albem-pola.html'">
+                <div class="album-image science-exhibition-bg">
+                    <div class="album-overlay">
+                        <h3>Diriya Sisu Pola 2024</h3>
+                        <p>6 Photos</p>
+                        <span class="view-album">View Album <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <svg viewBox="0 0 100 100" class="logo-svg footer-logo-svg">
+                            <circle cx="50" cy="50" r="45" class="logo-circle" />
+                            <text x="50" y="55" text-anchor="middle" class="logo-text">සංජනනි</text>
+                        </svg>
+                    </div>
+                    <span>Gothami School Media Unit</span>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#units">Units</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Gothami School Media Unit. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
