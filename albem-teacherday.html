@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teacher's Day 2024 Gallery - Gothami School Media Unit</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <div class="logo">
+                    <svg viewBox="0 0 100 100" class="logo-svg">
+                        <circle cx="50" cy="50" r="45" class="logo-circle" />
+                        <text x="50" y="55" text-anchor="middle" class="logo-text">සංජනනි</text>
+                    </svg>
+                </div>
+                <span class="school-name">Gothami School Media Unit</span>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#units">Units</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Album Header -->
+    <section class="page-header" style="background: linear-gradient(rgba(25, 118, 210, 0.8), rgba(25, 118, 210, 0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        <div class="container">
+            <h1>Annual Prize Giving</h1>
+            <p>Celebrating academic excellence and student achievements</p>
+            <a href="gallery.html" class="btn" style="margin-top: 20px;">
+                <i class="fas fa-arrow-left"></i> Back to Albums
+            </a>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <div class="photo-container">
+                <!-- Photo 1 -->
+                <div class="photo-item">
+                    <img src="C:\Users\risat\OneDrive\වැඩතලය\My Project\10 Ssuccesful\TeacherDay\1.jpg" onclick="openModal();currentSlide(1)">
+                    <div class="photo-overlay">
+                        <h4>Ceremony Hall</h4>
+                        <p>December 10, 2023</p>
+                        <a href="C:\Users\risat\OneDrive\වැඩතලය\My Project\10 Ssuccesful\TeacherDay\1.jpg" download="prize-giving-hall.jpg" class="download-btn">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Photo 2 -->
+                <div class="photo-item">
+                    <img src="C:\Users\risat\OneDrive\වැඩතලය\My Project\10 Ssuccesful\TeacherDay\2.jpg" alt="Principal's Speech" onclick="openModal();currentSlide(2)">
+                    <div class="photo-overlay">
+                        <h4>Principal's Speech</h4>
+                        <p>December 10, 2023</p>
+                        <a href="C:\Users\risat\OneDrive\වැඩතලය\My Project\10 Ssuccesful\TeacherDay\2.jpg" download="prize-giving-speech.jpg" class="download-btn">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Photo 3 -->
+                <div class="photo-item">
+                    <img src="C:\Users\risat\OneDrive\වැඩතලය\My Project\10 Ssuccesful\TeacherDay\3.jpg" onclick="openModal();currentSlide(3)">
+                    <div class="photo-overlay">
+                        <h4>Award Ceremony</h4>
+                        <p>December 10, 2023</p>
+                        <a href="C:\Users\risat\OneDrive\වැඩතලය\My Project\10 Ssuccesful\TeacherDay\3.jpg" download="prize-giving-award.jpg" class="download-btn">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+
+                <div class="photo-item">
+                    <img src="C:\Users\risat\OneDrive\වැඩතලය\My Project\10 Ssuccesful\TeacherDay\4.jpg" onclick="openModal();currentSlide(3)">
+                    <div class="photo-overlay">
+                        <h4>Award Ceremony</h4>
+                        <p>December 10, 2023</p>
+                        <a href="C:\Users\risat\OneDrive\වැඩතලය\My Project\10 Ssuccesful\TeacherDay\4.jpg" download="prize-giving-award.jpg" class="download-btn">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Photo Preview -->
+    <div id="photoModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        
+        <div class="modal-content">
+            <img id="modalImg" src="">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+        
+        <div class="modal-nav">
+            <button onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <a id="modalDownload" href="" download="" class="modal-download">
+            <i class="fas fa-download"></i> Download Image
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <svg viewBox="0 0 100 100" class="logo-svg footer-logo-svg">
+                            <circle cx="50" cy="50" r="45" class="logo-circle" />
+                            <text x="50" y="55" text-anchor="middle" class="logo-text">සංජනනි</text>
+                        </svg>
+                    </div>
+                    <span>Gothami School Media Unit</span>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#units">Units</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Gothami School Media Unit. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
